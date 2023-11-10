@@ -1,41 +1,21 @@
-function cor1(){
-    let cor = document.getElementById(`cor1`);
-    cor.style.color = `#eff3cd`;
-    cor.style.backgroundColor = `#605063`;
-}
+const url_server = "http://localhost:3001";
 
-function cor2(){
-    let cor = document.getElementById(`cor2`);
-    cor.style.color = `#eff3cd`;
-    cor.style.backgroundColor = `#605063`;
-}
+function cadastrar() {
+    console.log('Enviando dados ao servidor...');
+  
+    // Recuperando dados do formulário e armazenando na variável dados, que está estruturada em formato JSON
+    const dados = {
+      nome: document.querySelector('[name="Nome"]').value,
+      cpf: document.querySelector('[name="CPF"]').value,
+      data_nascimento: document.querySelector('[name="DataDeNascimento"]').value,
+      telefone: document.querySelector('[name="Telefone"]').value,
+      endereco: document.querySelector('[name="Endereco"]').value,
+      altura: document.querySelector('[name="Altura"]').value,
+      peso: document.querySelector('[name="Peso"]').value
+    }
 
-function cor3(){
-    let cor = document.getElementById(`cor3`);
-    cor.style.color = `#eff3cd`;
-    cor.style.backgroundColor = `#605063`;
-}
-
-function cor4(){
-    let cor = document.getElementById(`cor4`);
-    cor.style.color = `#eff3cd`;
-    cor.style.backgroundColor = `#605063`;
-}
-
-function cor5(){
-    let cor = document.getElementById(`cor5`);
-    cor.style.color = `#eff3cd`;
-    cor.style.backgroundColor = `#605063`;
-}
-
-function cor6(){
-    let cor = document.getElementById(`cor6`);
-    cor.style.color = `#eff3cd`;
-    cor.style.backgroundColor = `#605063`;
-}
-
-function cor7(){
-    let cor = document.getElementById(`cor7`);
-    cor.style.color = `#eff3cd`;
-    cor.style.backgroundColor = `#605063`;
-}
+    console.log(dados);
+  
+      // Requisição para back-end
+  
+  }

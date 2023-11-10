@@ -16,12 +16,12 @@ body{
     font-size: 15px;
 }
 
-.a, .b, .c, .d, .e, .f, .g{
+.a, .b, .c, .d, .e, .f, .g, .h{
     display: flex;
     flex-direction:row;
 }
 
-.Nome, .CPF, .DataDeNascimento, .Telefone, .Endereco, .Altura, .Peso{
+.Nome, .CPF, .DataDeNascimento, .Telefone, .Endereco, .Altura, .Peso, .Cadastro{
     background-color:  #61ada0;   
     border: 2px solid black;
     border-radius: 10px;
